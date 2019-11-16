@@ -1,0 +1,25 @@
+{
+    "name": "gedcom",
+    "displayName": "gedcom",
+    "description": "Syntax highlighting for gedcom files",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "gedcom",
+            "aliases": ["GEDCOM", "gedcom"],
+            "extensions": [".ged",".GED",".gedcom",".GEDCOM"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "gedcom",
+            "scopeName": "source.gedcom",
+            "path": "./syntaxes/gedcom.tmlanguage"
+        }]
+    }
+}
